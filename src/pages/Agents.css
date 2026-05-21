@@ -1,0 +1,53 @@
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.agent-card {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.agent-info {
+  padding: 1.5rem;
+}
+
+.agent-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.text-yellow-400 {
+  color: #fbbf24;
+}
+
+.agent-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.text-center { text-align: center; }
+.mb-5 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.text-4xl { font-size: 2.5rem; }
+.font-bold { font-weight: 700; }
+.max-w-2xl { max-width: 42rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.gap-1 { gap: 0.25rem; }
+.flex-1 { flex: 1; }
+.p-2 { padding: 0.5rem; }

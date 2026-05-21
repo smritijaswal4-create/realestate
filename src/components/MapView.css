@@ -1,0 +1,71 @@
+.map-wrapper {
+  width: 100%;
+  height: 600px;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; /* Keep leaflet controls below navbar */
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Fix for Leaflet controls showing above fixed navbar */
+.leaflet-top, .leaflet-bottom {
+  z-index: 400 !important;
+}
+
+/* Custom Popup Styles */
+.property-popup .leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
+  color: white;
+}
+
+.property-popup .leaflet-popup-content {
+  margin: 0;
+  width: 250px !important;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.popup-info {
+  padding: 1rem;
+}
+
+.popup-info h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.popup-info p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.popup-btn {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.property-popup .leaflet-popup-tip {
+  background: var(--bg-primary);
+}
