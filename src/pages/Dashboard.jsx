@@ -190,7 +190,7 @@ const Dashboard = () => {
       amenities: property.amenities || []
     });
     setImageFile(null);
-    setImagePreview(property.image ? `http://localhost:5000${property.image}` : '');
+    setImagePreview(property.image ? `${property.image}` : '');
     setFormError('');
     setIsEditing(true);
     setCurrentPropertyId(property._id);
@@ -397,7 +397,7 @@ const Dashboard = () => {
             <div className="profile-img" style={{ overflow: 'hidden' }}>
               {user.avatar ? (
                 <img 
-                  src={user.avatar.startsWith('http') ? user.avatar : `http://localhost:5000${user.avatar}`} 
+                  src={user.avatar.startsWith('http') ? user.avatar : `${user.avatar}`} 
                   alt="" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
@@ -516,7 +516,7 @@ const Dashboard = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                               {prop.image && (
                                 <img 
-                                  src={`http://localhost:5000${prop.image}`} 
+                                  src={`${prop.image}`} 
                                   alt="" 
                                   style={{ width: '40px', height: '40px', borderRadius: '4px', objectFit: 'cover' }} 
                                 />
@@ -704,7 +704,7 @@ const Dashboard = () => {
                         <img src={avatarPreview} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       ) : user.avatar ? (
                         <img 
-                          src={user.avatar.startsWith('http') ? user.avatar : `http://localhost:5000${user.avatar}`} 
+                          src={user.avatar.startsWith('http') ? user.avatar : `${user.avatar}`} 
                           alt="" 
                           style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                         />

@@ -32,7 +32,7 @@ const PropertyDetails = () => {
           
           // Formulate full image path
           const fullImgUrl = data.data.image && data.data.image.startsWith('/uploads/')
-            ? `http://localhost:5000${data.data.image}`
+            ? `${data.data.image}`
             : data.data.image || 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80';
             
           setActiveImage(fullImgUrl);

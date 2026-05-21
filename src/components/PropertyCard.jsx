@@ -5,7 +5,7 @@ import './PropertyCard.css';
 
 const PropertyCard = ({ property }) => {
   const imageUrl = property.image && property.image.startsWith('/uploads/')
-    ? `http://localhost:5000${property.image}`
+    ? `${property.image}`
     : property.image || 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80';
 
   return (

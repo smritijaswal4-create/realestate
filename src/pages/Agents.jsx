@@ -45,7 +45,7 @@ const Agents = () => {
         <div className="agents-grid">
           {agents.map(agent => {
             const avatarUrl = agent.avatar 
-              ? (agent.avatar.startsWith('http') ? agent.avatar : `http://localhost:5000${agent.avatar}`)
+              ? (agent.avatar.startsWith('http') ? agent.avatar : `${agent.avatar}`)
               : defaultAvatar;
             return (
               <div key={agent._id} className="agent-card glass-card">
